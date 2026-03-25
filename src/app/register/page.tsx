@@ -42,7 +42,7 @@ export default function RegisterPage(){
                 <form onSubmit={handleSubmit} className="space-y-4">
 
                     <div className="space-y-1">
-                        <label className="text-xs font-semibold text-zinc-400 uppercase ml-1">Email</label>
+                        <label className="text-xs font-semibold text-zinc-400 uppercase ml-1">Nom d'utilisateur</label>
                         <input type="text" 
                                placeholder="Votre nom d'utilisateur" 
                                onChange={(e)=>setName(e.target.value)} 
@@ -81,7 +81,7 @@ export default function RegisterPage(){
                         disabled={loading}
                         className="w-full bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 py-3 rounded-xl font-bold text-lg hover:opacity-90 active:scale-[0.98] transition-all disabled:opacity-50 flex justify-center items-center"
                     >
-                        {loading ? <PacmanLoader size={10} color="currentColor"/> : "S'inscrire'"}
+                        {loading ? <PacmanLoader size={10} color="currentColor"/> : "S'inscrire"}
                     </button>
                 </form>
 
